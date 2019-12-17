@@ -8,7 +8,7 @@
 [build-status]:https://travis-ci.org/triniwiz/nativescript-ffmpeg.svg?branch=master
 [build-url]:https://travis-ci.org/triniwiz/nativescript-ffmpeg
 [npm-image]:http://img.shields.io/npm/v/nativescript-ffmpeg-plugin.svg
-[npm-url]:https://npmjs.org/package/nativescript-ffmpeg-plugin
+[npm-url]:https://npmjs.org/package/nativescript-ffmpeg-plugin-fixed
 [downloads-image]:http://img.shields.io/npm/dm/nativescript-ffmpeg-plugin.svg
 [twitter-image]:https://img.shields.io/twitter/follow/triniwiz.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/triniwiz
@@ -16,7 +16,7 @@
 ## Installation
 
 ```javascript
-tns plugin add nativescript-ffmpeg-plugin
+tns plugin add nativescript-ffmpeg-plugin-fixed
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ tns plugin add nativescript-ffmpeg-plugin
     - Use execute() method with a single command line and an argument delimiter
 
     ```
-    import { LogLevel, FFmpeg } from 'nativescript-ffmpeg-plugin';
+    import { LogLevel, FFmpeg } from 'nativescript-ffmpeg-plugin-fixed';
 
     FFmpeg.execute('-i file1.mp4 -c:v mpeg4 file2.mp4', ' ').then(result => console.log("FFmpeg process exited with result " + result));
     ```
@@ -34,7 +34,7 @@ tns plugin add nativescript-ffmpeg-plugin
     - Use executeWithArguments() method with an array of arguments
 
     ```
-    import { LogLevel, FFmpeg } from 'nativescript-ffmpeg-plugin';
+    import { LogLevel, FFmpeg } from 'nativescript-ffmpeg-plugin-fixed';
 
     FFmpeg.executeWithArguments(["-i", "file1.mp4", "-c:v", "mpeg4", "file2.mp4"]).then(result => console.log("FFmpeg process exited with result " + result));
     ```
